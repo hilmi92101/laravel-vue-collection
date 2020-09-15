@@ -1,12 +1,20 @@
 <template>
-    <div class="container">
+    <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Example Component</div>
+                    <div class="card-header">About Component</div>
 
                     <div class="card-body">
-                        I'm an About component.
+                        <ul>
+                            <li class="btn">
+                                <router-link :to="{ name: 'home' }">Home</router-link>
+                            </li>
+                            <li class="btn">
+                                <router-link :to="{ name: 'about' }">About</router-link>
+                            </li>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>

@@ -1,3 +1,6 @@
+import Home from './components/Home';
+import About from './components/About';
+
 export default {
 
 
@@ -6,13 +9,15 @@ export default {
 
         {
             path:'/',
-            component: Home
+            component: Home,
+            name:'home'
         },
 
 
         {
             path:'/about',
-            component: About
+            component: About,
+            name:'about'
         },
 
 
