@@ -1,7 +1,10 @@
 import Home from './components/Home';
 //import About from './components/About';
-
 let About = () => import(/* webpackChunkName: "components/About" */ './components/About');
+let Sidenav = () => import(/* webpackChunkName: "components/Sidenav" */ './components/Sidenav');
+
+
+
 
 export default {
 
@@ -20,6 +23,12 @@ export default {
             path:'/about',
             component: About,
             name:'about'
+        },
+
+        {
+            path:'/sidenav',
+            component: Sidenav,
+            name:'sidenav'
         },
 
 

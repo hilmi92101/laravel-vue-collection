@@ -9,6 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Links__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Links */ "./resources/js/components/Links.vue");
 //
 //
 //
@@ -25,17 +26,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
+  components: {
+    Links: _Links__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  mounted: function mounted() {//console.log('Component mounted.')
   }
 });
 
@@ -64,31 +60,7 @@ var render = function() {
             _vm._v("About Component")
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("ul", [
-              _c(
-                "li",
-                { staticClass: "btn" },
-                [
-                  _c("router-link", { attrs: { to: { name: "home" } } }, [
-                    _vm._v("Home")
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "li",
-                { staticClass: "btn" },
-                [
-                  _c("router-link", { attrs: { to: { name: "about" } } }, [
-                    _vm._v("About")
-                  ])
-                ],
-                1
-              )
-            ])
-          ])
+          _c("div", { staticClass: "card-body" }, [_c("Links")], 1)
         ])
       ])
     ])

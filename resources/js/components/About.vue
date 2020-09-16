@@ -6,15 +6,7 @@
                     <div class="card-header">About Component</div>
 
                     <div class="card-body">
-                        <ul>
-                            <li class="btn">
-                                <router-link :to="{ name: 'home' }">Home</router-link>
-                            </li>
-                            <li class="btn">
-                                <router-link :to="{ name: 'about' }">About</router-link>
-                            </li>
-                            
-                        </ul>
+                        <Links></Links>
                     </div>
                 </div>
             </div>
@@ -23,9 +15,19 @@
 </template>
 
 <script>
+
+    import Links from "./Links";
+
     export default {
+
+        components: {
+
+            Links,
+
+        },
+        
         mounted() {
-            console.log('Component mounted.')
+            //console.log('Component mounted.')
         }
     }
 </script>
