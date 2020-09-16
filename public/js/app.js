@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"Components/About":"Components/About"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"components/About":"components/About"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -16084,7 +16084,7 @@ __webpack_require__.r(__webpack_exports__);
  //import About from './components/About';
 
 var About = function About() {
-  return __webpack_require__.e(/*! import() | Components/About */ "Components/About").then(__webpack_require__.bind(null, /*! ./components/About */ "./resources/js/components/About.vue"));
+  return __webpack_require__.e(/*! import() | components/About */ "components/About").then(__webpack_require__.bind(null, /*! ./components/About */ "./resources/js/components/About.vue"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = ({
