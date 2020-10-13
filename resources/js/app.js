@@ -1,8 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import routes from './routes';
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 
 Vue.use(VueRouter); // register vue router as a plugin
+
+Vue.use(BootstrapVue);
+Vue.use(IconsPlugin);
 
 let app = new Vue({
     el: '#app',

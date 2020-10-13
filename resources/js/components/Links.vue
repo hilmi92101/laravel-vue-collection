@@ -11,6 +11,10 @@
             <li class="btn">
                 <router-link :to="{ name: 'sidenav' }">Sidenav</router-link>
             </li>
+
+            <li class="btn">
+                <router-link :to="{ name: 'bootstrapvue' }">Bootstrap Vue</router-link>
+            </li>
         </ul>
     </div>
 </template>
