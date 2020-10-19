@@ -25,6 +25,7 @@
     },
     "dependencies": {
         "bootstrap-vue": "^2.17.3",
-        "vue-router": "^3.4.3"
+        "vue-router": "^3.4.3",
+        "vue-sidebar-menu": "^4.7.3"
     }
 }

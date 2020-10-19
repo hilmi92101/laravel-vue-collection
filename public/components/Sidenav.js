@@ -9,14 +9,83 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_sidebar_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-sidebar-menu */ "./node_modules/vue-sidebar-menu/dist/vue-sidebar-menu.js");
+/* harmony import */ var vue_sidebar_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_sidebar_menu__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {//console.log('Component mounted.')
+  },
+  components: {
+    SidebarMenu: vue_sidebar_menu__WEBPACK_IMPORTED_MODULE_0__["SidebarMenu"]
+  },
+  data: function data() {
+    return {
+      sideNavIsCollapsed: false,
+      sideNavWidth: '350px',
+      sideNavRelative: false,
+      sideNavMenu: [{
+        header: true,
+        title: 'Main Navigation',
+        hiddenOnCollapse: true
+      }, {
+        href: {
+          path: '/about'
+        },
+
+        /*href: '/about',*/
+        title: 'About',
+        icon: 'fa fa-user'
+      }, {
+        href: '/charts',
+        title: 'Charts',
+        icon: 'fa fa-chart-area',
+        child: [{
+          href: '/charts/sublink',
+          title: 'Sub Link'
+        }]
+      }]
+    };
+  },
+  methods: {
+    onToggleCollapse: function onToggleCollapse(collapsed) {
+      //console.log(collapsed);
+      if (collapsed) {
+        this.sideNavIsCollapsed = true;
+      } else {
+        this.sideNavIsCollapsed = false;
+      }
+    }
+  },
+  props: {
+    relative: {
+      type: Boolean,
+      "default": false
+    },
+    width: {
+      type: String,
+      "default": '350px'
+    },
+    widthCollapsed: {
+      type: String,
+      "default": '50px'
+    }
   }
 });
 
@@ -37,9 +106,39 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    aaa\n")])
+  return _c("div", [
+    _c(
+      "div",
+      {
+        staticClass: "main-sidenav",
+        class: { collapsed: _vm.sideNavIsCollapsed }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("sidebar-menu", {
+          attrs: {
+            width: _vm.sideNavWidth,
+            relative: _vm.sideNavRelative,
+            menu: _vm.sideNavMenu
+          },
+          on: { "toggle-collapse": _vm.onToggleCollapse }
+        })
+      ],
+      1
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container-fluid" }, [
+      _c("h1", [_vm._v("ssdasddsadadsds")])
+    ])
+  }
+]
 render._withStripped = true
 
 

@@ -2,6 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/components/About.js": "/components/About.js",
+    "/components/BootstrapVue.js": "/components/BootstrapVue.js",
     "/components/Sidenav.js": "/components/Sidenav.js",
-    "/components/BootstrapVue.js": "/components/BootstrapVue.js"
+    "/vendors~components/Sidenav.js": "/vendors~components/Sidenav.js"
 }

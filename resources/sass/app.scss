@@ -6,11 +6,16 @@
 @import 'variables';
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+//@import '~bootstrap/scss/bootstrap';
 
-
+// Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
+
+// vue side nav
+@import 'vue-sidebar-menu';
+@import 'node_modules/vue-sidebar-menu/src/scss/vue-sidebar-menu.scss';
+
 
 .navbar-laravel {
   background-color: #fff;

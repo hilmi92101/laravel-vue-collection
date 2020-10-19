@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"components/About":"components/About","components/BootstrapVue":"components/BootstrapVue","components/Sidenav":"components/Sidenav"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"components/About":"components/About","components/BootstrapVue":"components/BootstrapVue","vendors~components/Sidenav":"vendors~components/Sidenav","components/Sidenav":"components/Sidenav"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -67000,7 +67000,7 @@ var About = function About() {
 };
 
 var Sidenav = function Sidenav() {
-  return __webpack_require__.e(/*! import() | components/Sidenav */ "components/Sidenav").then(__webpack_require__.bind(null, /*! ./components/Sidenav */ "./resources/js/components/Sidenav.vue"));
+  return Promise.all(/*! import() | components/Sidenav */[__webpack_require__.e("vendors~components/Sidenav"), __webpack_require__.e("components/Sidenav")]).then(__webpack_require__.bind(null, /*! ./components/Sidenav */ "./resources/js/components/Sidenav.vue"));
 };
 
 var BootstrapVue = function BootstrapVue() {
